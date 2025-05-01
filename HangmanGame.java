@@ -1,5 +1,3 @@
-package Culminating;
-
 import java.io.*;
 import java.util.*;
 
