@@ -1,1 +1,3 @@
-# Hangman
+node_modules/
+.env
+dist/
