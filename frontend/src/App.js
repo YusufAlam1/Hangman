@@ -1,24 +1,18 @@
 import logo from './logo.svg';
-import './App.css';
+import StartingPage from './pages/StartingPage';
 
 function App() {
+  const handleCreate = (name) => {
+    console.log("Create room for", name);
+  };
+
+  const handleJoin = (name, code) => {
+    console.log(`${name} is joining room ${code}`);
+  };
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-
-        >
-          Learn React
-        </a>
-      </header>
+      <StartingPage onCreate={handleCreate} onJoin={handleJoin}/>
     </div>
   );
 }
